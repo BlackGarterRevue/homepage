@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Niconne&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Black Garter Revue - Performers</title>
+<style>
+
+main {
+  justify-content: center;
+}
+
+show-section {
+  display: flex;
+  clear: both;
+  overflow: auto;
+  padding: 10px;
+  border: 1px solid #fff;
+  margin: 10px auto;
+  justify-content: center;
+  max-width: 90%;
+}
+
+
+show-flyer img {
+  display: flex;
+  max-width: 80%;
+  justify-content: center;
+  margin: auto;
+}
+
+show-name {
+  font-family: "Niconne", cursive;
+  font-size: 2rem;
+  min-width: 50%;
+  justify-content: center;
+  display: flex;
+  padding: 0.3rem;
+}
+
+show-when {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding: 0.3rem;
+}
+
+show-where {
+  display: flex;
+  min-width: 80%;
+  justify-content: center;
+  margin: auto;
+  padding: 10px;
+}
+
+show-tickets {
+  display: flex;
+  background-color: #df3311;
+  min-width: 80%;
+  max-width: 80%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  font-size: 2rem;
+  /*padding: 0.8em;*/
+}
+show-tickets a {
+  display: flex;
+  background-color: #df3311;
+  min-width: 100%;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-size: 2rem;
+  padding: 0.8em;
+}
+</style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Black Garter Revue</h1>
+      <nav>
+        <ul>
+          <li><a href='/'>Home</a></li>
+          <li><a href='/services'>Services</a></li>
+          <li><a class='here' href='/shows'>Shows</a></li>
+          <li><a href='/performers'>Performers</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <show-section>
+        <show-flyer><img src='shows/garter-basics-2026-01.png' alt=''></show-flier>
+        <show-name>Garter Basics: A Six Week Burlesque Class Series</show-name>
+        <show-when>Mondays, starting January 12th, Chatting in the lobby at 5:55, Class at 6:00</show-when>
+        <show-where>Belfast Dance Studio, 109 High St, Belfast, ME</show-where>
+        <show-tickets><a href='https://www.eventbrite.com/e/garter-basics-tickets-1976634410732'>Buy Tickets</a></show-tickets>
+      </show-section>
+      <!--
+      <show-section>
+        <show-flyer></show-flier>
+        <show-name></show-name>
+        <show-when></show-when>
+        <show-where></show-venue>
+        <show-tickets></show-tickets>
+      </show-section>
+      -->
+
+    </main>
+  </body>
+</html>
