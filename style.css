@@ -80,6 +80,63 @@ main p {
   color: #fff;
 }
 
+
+
+show-flier img {
+  display: flex;
+  max-width: 80%;
+  justify-content: center;
+  margin: auto;
+}
+
+show-name {
+  font-family: "Niconne", cursive;
+  font-size: 2rem;
+  min-width: 50%;
+  justify-content: center;
+  display: flex;
+  padding: 0.3rem;
+}
+
+show-when {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding: 0.3rem;
+}
+
+show-where {
+  display: flex;
+  min-width: 80%;
+  justify-content: center;
+  margin: auto;
+  padding: 10px;
+}
+
+show-tickets {
+  display: flex;
+  background-color: #df3311;
+  min-width: 80%;
+  max-width: 80%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  font-size: 2rem;
+  /*padding: 0.8em;*/
+}
+
+show-tickets a {
+  display: flex;
+  background-color: #df3311;
+  min-width: 100%;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-size: 2rem;
+  padding: 0.8em;
+}
+
 /* Mobile responsive styles */
 @media (max-width: 768px) {
   header {
