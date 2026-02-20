@@ -64,13 +64,22 @@
         an evening of unforgettable entertainment and become part of the
         tantalizing world they’ve created!
       </p>
-      <show-section>
-        <iframe src="https://lineup.blackgarterrevue.com/events/next-show/"
+      <iframe
+        id="events-widget"
+        src="https://lineup.blackgarterrevue.com/events/next-show/"
         width="100%"
-        height="900"
-        frameborder="0"
-        style="border: none;">
-</iframe>
+        style="border: none; display: block;"
+        scrolling="no"
+      ></iframe>
+
+      <script>
+        window.addEventListener('message', function(event) {
+          if (event.origin !== 'https://lineup.blackgarterrevue.com') return;
+          if (event.data && event.data.type === 'darkbloom-widget-resize') {
+            document.getElementById('events-widget').style.height = event.data.height + 'px';
+          }
+        });
+      </script>
       </show-section>
     </main>
   </body>
