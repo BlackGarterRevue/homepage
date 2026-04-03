@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Niconne&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Black Garter Revue - Shows</title>
+    <style>
+      main {
+        justify-content: center;
+      }
+
+      show-section {
+  display: flex;
+  flex-direction: column;
+  clear: both;
+  overflow: auto;
+  padding: 10px;
+  border: 1px solid #fff;
+  margin: 10px auto;
+  justify-content: center;
+  max-width: 90%;
+}
+
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Black Garter Revue</h1>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/services">Services</a></li>
+          <li><a class="here" href="/shows">Shows</a></li>
+          <li><a href="/performers">Performers</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <iframe
+        id="events-widget"
+        src="https://lineup.blackgarterrevue.com/events/widget/"
+        width="100%"
+        style="border: none; display: block;"
+        scrolling="no"
+      ></iframe>
+
+      <script>
+        window.addEventListener('message', function(event) {
+          if (event.origin !== 'https://lineup.blackgarterrevue.com') return;
+          if (event.data && event.data.type === 'darkbloom-widget-resize') {
+            document.getElementById('events-widget').style.height = event.data.height + 'px';
+          }
+        });
+      </script>
+
+    </main>
+  </body>
+</html>
